@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tasques</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Tasques</h1>
+        
+        <div class="task-form">
+            <input type="text" id="taskName" placeholder="Nom de la tasca">
+            <select id="taskType">
+                <option value="normal">Normal</option>
+                <option value="urgent">Urgent</option>
+                <option value="critica">Crítica</option>
+            </select>
+            <button id="addTask">Afegir Tasca</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <p>Total de tasques: <span id="taskCount">0</span></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
