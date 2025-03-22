@@ -1,4 +1,3 @@
-
 class Tasca {
     static totalTasques = 0;
     
@@ -109,12 +108,13 @@ document.getElementById("addTask").addEventListener("click", () => {
     let novaTasca;
 
     if (tipus === "critica") {
-        novaTasca = new Critica(nom, "2025-12-31", "Urgentíssim");
+        novaTasca = new Critica(nom, "2025-12-31", "Urgent!!!!!!");
     } else if (tipus === "urgent") {
-        novaTasca = new Urgent(nom, "Recorda fer-ho avui!");
+        novaTasca = new Urgent(nom, "Recorda fer-ho!!!!!!!!!!!");
     } else {
         novaTasca = new Tasca(nom, 1, "normal");
     }
 
     gestorTasques.afegirTasca(novaTasca);
 });
+
